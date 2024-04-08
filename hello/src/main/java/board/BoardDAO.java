@@ -129,12 +129,24 @@ public class BoardDAO {
 	}
 
 	public int update(int boardID, String boardTitle, String boardContent) {
-		String SQL = "UPDATE BOARD SET boardTitle = ?, boardContent = ?, WHERE boardID = ?";
+		String SQL = "UPDATE BOARD SET boardTitle = ?, boardContent = ? WHERE boardID = ?";
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(SQL);
 			pstmt.setString(1, boardTitle);
 			pstmt.setString(2, boardContent);
 			pstmt.setInt(3, boardID);
+			return pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return -1; //데이터베이스 오류
+	}
+
+	public int delete(int boardID) {
+		String SQL = "UPDATE BOARD SET boardAvailable = 0 WHERE boardID = ?";
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(SQL);
+			pstmt.setInt(1, boardID);
 			return pstmt.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();

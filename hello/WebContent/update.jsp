@@ -37,6 +37,13 @@
 			script.print("</script>");
 		}
 		Board board = new BoardDAO().getBoard(boardID);
+		if (!userID.equals(board.getUserID())){
+			PrintWriter script = response.getWriter();
+			script.print("<script>");
+			script.print("alert('권한이 없습니다.')");
+			script.print("location.href = 'board.jsp");
+			script.print("</script>");
+		}
 	%>
 	<!-- header -->
 	<nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
