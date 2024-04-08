@@ -131,6 +131,7 @@ table td a:hover{
 
 .carousel-item{
 	height:100%;
+	position: relative;
 }
 
 .carousel-item img{
