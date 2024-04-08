@@ -39,8 +39,8 @@
 		if (!userID.equals(board.getUserID())){
 			PrintWriter script = response.getWriter();
 			script.print("<script>");
-			script.print("alert('권한이 없습니다.')");
-			script.print("location.href = 'board.jsp");
+			script.print("alert('권한이 없습니다.');");
+			script.print("location.href = 'board.jsp';");
 			script.print("</script>");
 		} else{
 			if (request.getParameter("boardTitle") == null || request.getParameter("boardContent") == null || request.getParameter("boardTitle").equals("") || request.getParameter("boardContent").equals("")) {
