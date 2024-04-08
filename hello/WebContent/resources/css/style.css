@@ -16,6 +16,7 @@ h1,h2,h3,h4,h5,h6,p,a{
 
 .navbar {
 	height:50px;
+	z-index:9999999;
 }
 
 .nav-link.active{
@@ -26,7 +27,10 @@ h1,h2,h3,h4,h5,h6,p,a{
 .card{
 	width:600px;
 	max-width:100%;
-	margin:100px auto;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .loginText{
@@ -90,4 +94,32 @@ table td a:hover{
     align-items: center;
     justify-content: center;
     padding:0;
+}
+
+.alert-dismissible{
+	width: 800px;
+    height: 270px;
+    max-width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index:1;
+}
+
+.alert-dismissible button{
+	width:200px;
+	max-width:100%;
+}
+
+#carouselExampleAutoplaying{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
 }

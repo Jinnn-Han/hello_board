@@ -27,6 +27,13 @@
 		}
 		Board board = new BoardDAO().getBoard(boardID);
 	%>
+	<script>
+		function confirmAndDelete(boardID) {
+		    if (confirm('정말로 삭제하시겠습니까?')) {
+		        location.href = 'deleteAction.jsp?boardID=' + boardID;
+		    }
+		}
+	</script>
 	<%@ include file="WEB-INF/include/menu.jsp" %>
 	<div class="container">
 		<div class="card table-background text-white bg-secondary mb-3">
@@ -59,7 +66,7 @@
 						<button type="button" class="btn btn-secondary" cursorshover="true" onclick="location.href='board.jsp'">목록</button>
 						<div class="d-flex gap-1">
 							<button type="button" class="btn btn-primary" cursorshover="true" onclick="location.href='update.jsp?boardID=<%= boardID %>'">수정</button>
-							<button type="button" class="btn btn-outline-light" cursorshover="true" onclick="location.href='deleteAction.jsp?boardID=<%= boardID %>'">삭제</button>
+							<button type="button" class="btn btn-outline-light" cursorshover="true" onclick="confirmAndDelete(<%= boardID %>)">삭제</button>
 						</div>
 					</div>
 				</div>
