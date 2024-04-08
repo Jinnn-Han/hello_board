@@ -123,3 +123,19 @@ table td a:hover{
 	top:0;
 	left:0;
 }
+
+.carousel-inner{
+	width:100%;
+	height:100%;
+}
+
+.carousel-item{
+	height:100%;
+}
+
+.carousel-item img{
+	width:100%;
+	height:100%;
+	object-fit: cover;
+    object-position: center;
+}

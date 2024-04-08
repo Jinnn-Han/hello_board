@@ -4,6 +4,7 @@
 
 	<%
 		String userID = null;
+		String userName = null;
 		if (session.getAttribute("userID") != null){
 			userID = (String) session.getAttribute("userID");
 		}

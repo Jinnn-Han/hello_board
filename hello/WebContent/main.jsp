@@ -29,9 +29,14 @@
 	</div>
 	<div class="container">
 		<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+		    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  		</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img src="resources/img/image1.jpg" class="d-block w-100" alt="image1">
+					<img src="resources/img/image1.jpg"class="d-block w-100" alt="image1">
 				</div>
 				<div class="carousel-item">
 					<img src="resources/img/image2.jpg" class="d-block w-100" alt="image2">
@@ -50,6 +55,7 @@
 			</button>
 		</div>
 	</div>
+
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
