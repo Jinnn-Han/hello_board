@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+	font-family: 'Pretendard-Regular';
+}
+
+h1,h2,h3,h4,h5,h6,p,a{
+	margin:0;
+	padding:0;
+}
+
+.navbar {
+	height:50px;
+}
+
+.nav-link.active{
+	color:#e83283 !important;
+	font-weight:700;
+}
+
+.card{
+	width:600px;
+	max-width:100%;
+	margin:100px auto;
+}
+
+.loginText{
+	color:#333;
+	display:flex;
+	align-items:center;
+	padding:0 20px;
+}
+
+.loginText span{
+	color:#e83283;
+	font-weight:700;
+}
+
+.search-group{
+	display:flex;
+	align-items:center;
+}
+
+.search-group input{
+	height:40px;
+}
+
+.search-group button{
+	height:40px;
+	display:flex;
+	align-items:center;
+}
+
+/* 게시판 */
+.card.table-background{
+	width: 1000px;
+}
+table {
+	padding:0;
+	margin:0 !important;
+}
+table th,table td{
+	text-align:center;
+	color:#333 !important;
+}
+
+table td{
+	background:#999ddf00 !important;
+}
+
+table th,table td a{
+	color:#333 !important;
+	text-decoration:none;
+}
+table td a:hover{
+	font-weight:700;
+}
+.btn-board-group{
+	display:flex;
+}
+.btn-board-group button,.btn-board-group input,.btn-board-group a{
+	width:100px;
+	height: 40px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0;
+}
